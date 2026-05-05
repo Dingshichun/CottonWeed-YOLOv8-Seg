@@ -4,7 +4,7 @@
 
 ## 数据集
 
-- **来源**：数据集下载地址：https://www.kaggle.com/datasets/omarhesham189/cottonweeddet12 ，下载解压后放置在项目根目录下，还需使用 SAM 生成多边形掩模。
+- **来源**：数据集下载地址：https://www.kaggle.com/datasets/omarhesham189/cottonweeddet12 ，下载解压后放置在项目根目录下，还需运行 tools/auto_annotate_all.py 生成多边形掩模。
 - **类别数**：12 类（包含棉花作物及多种杂草）
 - **标注格式**：YOLO polygon 格式（由 SAM 辅助生成，未进行人工修正，但基本满足部署需求。）
 - **图像尺寸**：原始分辨率拍摄，训练时统一缩放至 640×640  
@@ -240,6 +240,13 @@ pip install -r requirements.txt
 ```
 
 ```bash
+# 快速开始
+
+# 首先将 CottonWeedDet12/Dataset/data.yaml 复制到自己下载的数据集目录 CottonWeedDet12/Dataset 中，并修改其中的 path 为自己的路径
+
+# 使用 SAM 生成多边形掩码，会覆盖原来的矩形框数据
+python tools/auto_annotate_all.py
+
 # 基线训练
 python train/train_yolo_seg.py
 
