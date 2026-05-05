@@ -1,0 +1,11 @@
+# YOLOv8 dataset configuration file for AppleBBCH81
+path: /home/ding/2D_CV/Crop-Weed_Identification/CottonWeedDet12/Dataset
+train: images/train
+val: images/val
+test: images/test
+
+# Number of classes
+nc: 12
+
+# Class names 
+names: ['Waterhemp', 'MorningGlory', 'Purslane', 'SpottedSpurge', 'Carpetweed', 'Ragweed', 'Eclipta', 'PricklySida', 'PalmerAmaranth', 'Sicklepod', 'Goosegrass', 'Cutleaf']

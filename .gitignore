@@ -1,0 +1,30 @@
+# dataset
+CottonWeedDet12/Dataset/images/
+CottonWeedDet12/Dataset/labels/
+
+# train results
+runs/segment/base_train/
+runs/segment/train_albumentations/
+runs/segment/train_aug_only/
+runs/segment/train_cbam_aug/
+runs/segment/train_cbam_only/
+runs/segment/train_cbam_step2/
+runs/segment/train_eca_only/
+output/
+# 保留部分测试结果
+!runs/segment/test_results/  
+
+# others
+*.vscode/
+*__pycache__/
+
+# weights and models
+*.pt
+*.pth
+*.engine
+*.onnx
+
+# environment
+.env
+venv/
+env/

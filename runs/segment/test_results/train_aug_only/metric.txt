@@ -1,0 +1,8 @@
+Box mAP@50:     0.8849
+Box mAP@50-95:  0.7751
+Mask mAP@50:    0.8734
+Mask mAP@50-95: 0.6793
+Box Precision:  0.8430
+Box Recall:     0.8857
+Mask Precision: 0.8437
+Mask Recall:    0.8857

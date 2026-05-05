@@ -1,0 +1,15 @@
+# Core
+ultralytics>=8.0.0
+torch>=2.0.0
+opencv-python>=4.7.0
+numpy>=1.22.0
+tqdm>=4.64.0
+PyYAML>=6.0
+
+# Visualization
+matplotlib>=3.5.0
+pillow>=9.0.0
+
+# Optional — only needed for Experiment ② (train_albumentations2)
+albumentations>=1.3.0
+scipy>=1.9.0
